@@ -24,7 +24,7 @@ sudo yum install conntrack -y
 
 #Istart Minicube
 minikube start --memory 8192 --cpus 2
-sudo chown -R $USER $HOME/.minikube; chmod -R u+wrx $HOME/.minikube
+
 
 #Download Boutique
 git clone https://github.com/Mark-McCracken/online-boutique
