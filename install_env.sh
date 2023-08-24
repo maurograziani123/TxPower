@@ -23,7 +23,7 @@ sudo yum install git -y
 sudo yum install conntrack -y
 
 #Istart Minicube
-minikube start --driver=none
+minikube start --memory 8192 --cpus 2
 sudo chown -R $USER $HOME/.minikube; chmod -R u+wrx $HOME/.minikube
 
 #Download Boutique
