@@ -70,3 +70,5 @@ nohup minikube tunnel &> /dev/null &
 port=`kubectl -n boutique get svc/frontend-external | grep frontend | cut -d ":" -f2 | cut -d "/" -f1`
 #
 # Record Public and Private Application Access
+# Record Public and Private Application Access
+echo "${port}" >> /home/ec2-user/boutiquePort
